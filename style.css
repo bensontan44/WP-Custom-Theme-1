@@ -1,0 +1,304 @@
+/*
+ Theme Name:   Custom Wordpress Theme One
+ Description:  This is my first custom theme.
+ Author:       Benson Tan
+ Version:      1.0.0
+*/
+
+/*
+ * Globals
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/*
+ * Blog name and description
+ */
+
+.jumbotron {
+
+  background: url('http://localhost/wordpressv1/wp-content/uploads/2017/02/cropped-IMGP0703-3.jpg'); 
+
+    animation: animatedBackground 20s linear infinite;
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+    width: auto;
+	height: auto; 
+  
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+    color:white;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: white;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 0.5rem 0;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 44, 66, 0.9);
+
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*
+ * CUSTOM
+ */
+.admin-bar .navbar-fixed-top{
+    margin-top:32px;
+}
+
+body {
+font: 300 18px/1em "Lato",serif;
+padding-top: 50px;
+line-height:1.5em;
+background-color: #4c7777;
+color: white;
+}
+
+.current-menu-item{
+    background: #ccc;
+}
+
+.jumbotron{
+    color:white;
+
+}
+
+.jumbotron h1{
+        font: 700 70px/1em "Roboto",serif;
+}
+ 
+.navbar-nav > li > a{
+    font: 300 20px/1em "Lato",serif;
+}
+
+.navbar-fixed-top{
+    background-color: rgba(0, 44, 66, 0.9);
+    border-bottom: 3px solid #33b7b2;
+    box-shadow: 0 5px 5px rgba(81, 81, 81, 0.5);
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+ color:white;   
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+color:#33b7b2;
+transition: transform 350ms linear 0s;
+transform:translateY(-5px);
+}
+
+h3{
+    font: 300 48px/1em "Lato",serif;
+    text-transform:uppercase;
+}
+
+h4{
+    text-transform:uppercase;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:#33b7b2;
+}
+
+.btn{
+    font: 300 20px/1em "Lato",serif;
+}
+
+.btn-success{
+    background: rgba(0, 44, 66, 0.9);
+    border:none;
+    margin:2px;
+}
+
+.btn-success:hover{
+     background:#33b7b2;
+}
+
+.hovereffect img {
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.5s ease; /* Firefox */
+  	-o-transition: all 0.5s ease; /* IE 9 */
+  	-ms-transition: all 0.5s ease; /* Opera */
+  	transition: all 0.5s ease;
+}
+
+.hovereffect:hover img {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+     opacity:0.8;
+}
+
+
+.navbar-toggle{
+    background:#33b7b2 !important;
+   
+    border:none;
+  
+}
+
+.navbar-toggle:hover{
+background:#4c7777 !important;
+}
+
+.mnav{
+    padding:15px !important;
+}
+
+a#scroll-to-top {
+    right: 10px;
+}
+
+.sidebar{
+margin-top:40px;
+}
+
+
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 1200px) { 
+
+        .container{
+            padding:0px 25px;
+        }
+        
+
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+        .container{
+            padding:0px 40px;
+        }
+        
+        h4{
+        font-size:12px;
+        }
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+        .container{
+        padding:0px 40px;
+        }
+        
+        .admin-bar .navbar-fixed-top{
+        margin-top:50px;
+        }
+    
+        h4{
+        font-size:12px;
+        }
+    
+        h3{
+        font: 300 24px/1em "Lato",serif;
+        text-transform:uppercase;
+        }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+        .container{
+            padding:0px 40px;
+        }
+        
+        .admin-bar .navbar-fixed-top{
+        margin-top:50px;
+        }
+    
+        h4{
+        font-size:12px;
+        }
+    
+        h3{
+        font: 300 24px/1em "Lato",serif;
+        text-transform:uppercase;
+        }
+
+    
+}
+
+            
+
+
+  
