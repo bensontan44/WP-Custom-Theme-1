@@ -10,7 +10,6 @@
 
   <body <?php body_class(); ?> >
       
-
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container mnav">
         <div class="navbar-header">
@@ -33,19 +32,12 @@
                 );
     
                 wp_nav_menu($args);
-    
             ?>
         </div><!--/.nav-collapse -->
           
       </div>
     </div>
-      
-
-      
-      
-      
-      
-
+ 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
       <div class="text-center">

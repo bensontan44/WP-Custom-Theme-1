@@ -42,11 +42,10 @@
                     <p><?php _e( 'Sorry, the page does not exist.' ); ?></p>
                 <?php endif; ?>
  
-
-            
+      
      </div> <!-- End Container -->
 
 <?php get_footer() ?>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+
 
