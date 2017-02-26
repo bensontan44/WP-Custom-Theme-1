@@ -9,7 +9,6 @@
                 <?php endwhile; else : ?>
                     <p><?php _e( 'Sorry, the page does not exist.' ); ?></p>
                 <?php endif; ?>
-
             </div>        
      </div>
 

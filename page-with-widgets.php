@@ -11,7 +11,7 @@
                     <div class="col-md-12">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         
-                    <h1 class="blog-post-title"><?php the_title() ?></h1>
+                    <h2 class="blog-post-title"><?php the_title() ?></h2>
                     <p> <?php the_content(); ?></p>
           
                     </div> <!-- End Column -->
